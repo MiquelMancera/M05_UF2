@@ -16,7 +16,7 @@
 
     <main>
       <article>
-        <form>
+        <form name="formulari">
 
           <section id="pregunta-1">
             <h2>Pregunta #1</h2>
@@ -25,29 +25,29 @@
             </div>
             <div class="respostes">
               <div>
-                <input type="radio" id="resposta-1-1" name="resposta-1"/>
+                <input type="radio" id="resposta11" value="1" name="resposta1"/>
                 &nbsp;&nbsp;
-                <label for="resposta-1-1">SELECT</label>
+                <label for="resposta11">SELECT</label>
               </div>
               <div>
-                <input type="radio" id="resposta-1-2" name="resposta-1"/></input>
+                <input type="radio" id="resposta12" value="2" name="resposta1"/></input>
                 &nbsp;&nbsp;
-                <label for="resposta-1-2">FROM</label>
+                <label for="resposta12">FROM</label>
               </div>
               <div>
-                <input type="radio" id="resposta-1-3" name="resposta-1"/>
+                <input type="radio" id="resposta13" value="3" name="resposta1"/>
                 &nbsp;&nbsp;
-                <label for="resposta-1-3">WHERE</label>
+                <label for="resposta13">WHERE</label>
               </div>
               <div>
-                <input type="radio" id="resposta-1-4" name="resposta-1"/>
+                <input type="radio" id="resposta14" value="4" name="resposta1"/>
                 &nbsp;&nbsp;
-                <label for="resposta-1-4">ORDER BY</label>
+                <label for="resposta14">ORDER BY</label>
               </div>
               
               
             </div> <!-- FINAL <div class="respostes">-->
-            <button>Següent >></button>
+            <button onclick="pregunta(this, 0)">Següent >></button>
           </section> <!-- FINAL <section id="pregunta-#"> -->
 
           <section id="pregunta-2">
@@ -150,5 +150,6 @@
     <footer>
       <span class="vermell">Designed and developed by DAW2© 2020-2021 All rights reserved</span>
     </footer>
+    <script src="js/preguntes.js"></script>
   </body>
 </html>
