@@ -73,11 +73,11 @@ section {
   flex-direction: column;
   justify-content: space-around;
 }
-
+/*
 section#pregunta-2, section#pregunta-3, section#pregunta-4 {
   display: none;
 }
-
+*/
 section h2 {
   align-self: flex-start;
   font-family: Arcade;
@@ -170,4 +170,20 @@ footer span {
   font-family: Arcade;
   font-size: 1.2em;
   font-weight: 100;
+}
+
+.elementOcult {
+  display: none;
+}
+
+.elementVisible {
+  display:flex;
+}
+
+.noMarcada{
+  background-color: white;
+}
+
+.siMarcada{
+  background-color: blue;
 }
