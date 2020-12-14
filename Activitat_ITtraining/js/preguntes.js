@@ -10,7 +10,6 @@ function pregunta(objecte, numPreg){
     }
     arrRespostes[numPreg] = resposta;
     alert ("has escollit la resposta "+ resposta + " de la pregunta " + (numPreg+1));
-
     switch(numPreg){
         case 0:
             obj = document.getElementById("pregunta-1");
