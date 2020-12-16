@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>ITtraining</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="css/estils.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./css/estils.css" />
   </head>
 
   <body>
@@ -18,39 +18,39 @@
       <article>
         <form name="formulari">
 
-          <section id="pregunta-1" class="elementVisible">
+          <section class="elementVisible" id="pregunta-1">
             <h2>Pregunta #1</h2>
             <div class="enunciat">
-              <p>Quina és la clausula per visualitzar un element d'una taula?</p>
+              <p>Quines són les clausules obligatòries a una comanda SQL?</p>
             </div>
             <div class="respostes">
               <div>
-                <input type="radio" id="resposta11" value="1" name="resposta1"/>
+                <input type="radio" id="resp_1_1" value="1" name="resposta1" onclick="pregunta(this)"/>
                 &nbsp;&nbsp;
-                <label for="resposta11">SELECT</label>
+                <label onclick="pregunta(this)">SELECT</label>
               </div>
               <div>
-                <input type="radio" id="resposta12" value="2" name="resposta1"/></input>
+                <input type="radio" id="resp_1_2" value="2"  name="resposta1" onclick="pregunta(this)"/>
                 &nbsp;&nbsp;
-                <label for="resposta12">FROM</label>
+                <label onclick="pregunta(this)">FROM</label>
               </div>
               <div>
-                <input type="radio" id="resposta13" value="3" name="resposta1"/>
+                <input type="radio" id="resp_1_3" value="3" name="resposta1" onclick="pregunta(this)"/>
                 &nbsp;&nbsp;
-                <label for="resposta13">WHERE</label>
+                <label onclick="pregunta(this)">WHERE</label>
               </div>
               <div>
-                <input type="radio" id="resposta14" value="4" name="resposta1"/>
+                <input type="radio" id="resp_1_4" value="4" name="resposta1" onclick="pregunta(this)"/>
                 &nbsp;&nbsp;
-                <label for="resposta14">ORDER BY</label>
+                <label onclick="pregunta(this)">ORDER BY</label>
               </div>
-              
-              
             </div> <!-- FINAL <div class="respostes">-->
-            <button type="button" onclick="pregunta(this, 0)">Següent >></button>
+            <button type="button" id="boto-1" value="boto-1" onclick="passaSeguent(this)">Següent >></button>
+             <!-- disabled -->
+             <!-- <button onmouseover="encima()" onmouseout="fuera()"  type="button" id="boto-1" onclick="mostrar_3();"></button> -->
           </section> <!-- FINAL <section id="pregunta-#"> -->
 
-          <section id="pregunta-2"  class="elementOcult">
+          <section class="elementOcult" id="pregunta-2">
             <h2>Pregunta #2</h2>
             <div class="enunciat">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
@@ -78,10 +78,10 @@
                 </select>
               </div>
             </div> <!-- FINAL <div class="respostes"> -->
-            <button  type="button" onclick="pregunta(this, 1)">Següent >></button>
+            <button>Següent >></button>
           </section>  <!-- FINAL <section id="pregunta-#"> -->
 
-          <section id="pregunta-3"  class="elementOcult">
+          <section class="elementOcult" id="pregunta-3">
             <h2>Pregunta #3</h2>
             <div class="enunciat">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
@@ -109,10 +109,10 @@
                 </select>
               </div>
             </div> <!-- FINAL <div class="respostes"> -->
-            <button  type="button" onclick="pregunta(this, 2)">Següent >></button>
+            <button>Següent >></button>
           </section>  <!-- FINAL <section id="pregunta-#"> -->
 
-          <section id="pregunta-4"  class="elementOcult">
+          <section class="elementOcult" id="pregunta-4">
             <h2>Pregunta #4</h2>
             <div class="enunciat">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
@@ -140,7 +140,7 @@
                   <option>Lorem ipsum dolor sit amet</option>
                 </select>
               </div> <!-- FINAL <div class="respostes"> -->
-            <button  type="button" onclick="pregunta(this, 3)">Següent >></button>
+            <button>Següent >></button>
           </section>  <!-- FINAL <section id="pregunta-#"> -->
 
           </form>  <!-- FINAL <form> -->
@@ -150,6 +150,6 @@
     <footer>
       <span class="vermell">Designed and developed by DAW2© 2020-2021 All rights reserved</span>
     </footer>
-    <script src="js/preguntes.js"></script>
+    <script src="./js/preguntes.js"></script>
   </body>
 </html>
